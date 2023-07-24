@@ -30,6 +30,15 @@ function rand(min = 1000, max = 3000) {
     }, rand());
   }
   
+f1(function() {
+  f2(function() {
+    f3(function(){
+      console.log('Olá Mundo');
+    });
+  });
+});
+
+
   f1(f1Callback);
   
   function f1Callback() {
